@@ -1,0 +1,42 @@
+
+<p>
+    This page contains the general information of a particular program. You can perform various
+    operations on the program here.
+  </p>
+  <div>
+  <table class="generaltable">
+      <tr>
+          <td>
+              <b>Code</b>
+          </td>
+          <td class="version cell c1">
+            <p>{{program.program_code}}</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <b>Level</b>
+          </td>
+          <td class="version cell c1">
+            <p>{{program.program_level}}</p>
+          </td>
+        </tr>
+          <td>
+              <b>Credits</b>
+          </td>
+          <td class="version cell c1">
+            <p>{{program.program_credits}}</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <b>Courses</b>
+          </td>
+          <td class="version cell c1">
+            <p>{{{courses}}}</p>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+  <a class="btn btn-primary" href="{{github_url}}">View On Github</a>
+  </div>

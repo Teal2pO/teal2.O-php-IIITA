@@ -1,0 +1,69 @@
+
+<p>
+  This page contains the general information of a particular course. You can perform various
+  operations on the course here.
+</p>
+<div>
+<table class="generaltable">
+    <tr>
+        <td>
+            <b>Code</b>
+        </td>
+        <td class="version cell c1">
+          <p>{{course.course_code}}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <b>Category</b>
+        </td>
+        <td class="version cell c1">
+          <p>{{course.course_category}}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <b>Type</b>
+        </td>
+        <td class="version cell c1">
+          <p>{{course.course_type}}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <b>Credits</b>
+        </td>
+        <td class="version cell c1">
+          <p>{{course.course_credits}}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <b>Level</b>
+        </td>
+        <td class="version cell c1">
+          <p>{{course.course_level}}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <b>Learning Outcomes</b>
+        </td>
+        <td class="version cell c1">
+          <p>{{{learning_outcomes}}}</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <b>Is available globally?</b>
+        </td>
+        <td class="version cell c1">
+          <p>{{course.global}}</p>
+        </td>
+      </tr>
+  </tbody>
+</table>
+<a class="btn btn-primary" href="{{github_url}}">View On Github</a>
+<a class="btn btn-primary" style="margin-left: 5px;" href="{{update_url}}?id={{course.id}}">Update Branch</a>
+<a class="btn btn-primary" style="margin-left: 5px;" href="{{github_url}}">New Version</a>
+</div>

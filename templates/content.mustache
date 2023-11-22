@@ -1,0 +1,35 @@
+<p>
+    This page contains the general information of a particular course content. You can perform various
+    operations on the content here.
+</p>
+<div>
+    <table class="generaltable">
+        <tr>
+            <td>
+                <b>Code</b>
+            </td>
+            <td class="version cell c1">
+              <p>{{content.content_code}}</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <b>Description</b>
+            </td>
+            <td class="version cell c1">
+              <p>{{content.description}}</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <b>Is available globally?</b>
+            </td>
+            <td class="version cell c1">
+              <p>{{content.global}}</p>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+    <a class="btn btn-primary" href="{{github_url}}">View On Github</a>
+    <a class="btn btn-primary" href="{{update_url}}?id={{content.id}}">Update Content</a>
+    </div>

@@ -1,0 +1,38 @@
+<p>
+  The follwing list displays programs that have been created by the admin using
+  the teal tool.
+</p>
+<table class="generaltable">
+  <thead>
+    <tr>
+      <th class="header c0 pluginname" scope="col">Program Name</th>
+      <th class="header c1 version" scope="col">Program Code</th>
+      <th class="header c2 availability" scope="col">Level</th>
+      <th class="header c3 settings" colspan="2" scope="col">Credits</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#programs}}
+    <tr class="type-local name-local_adminer status-uptodate extension">
+      <td class="pluginname cell c0">
+        <div class="displayname">
+          <a href="{{ program_url }}?id={{ id }}"> {{ program_name }} </a>
+        </div>
+      </td>
+      <td class="version cell c1">
+        <div class="displayname">{{ program_code }}</div>
+      </td>
+      <td class="uninstall cell c4">
+        <div class="displayname">
+          {{ program_level }}
+        </div>
+      </td>
+      <td>
+        <div class="displayname">
+          {{ program_credits }}
+        </div>
+      </td>
+    </tr>
+    {{/programs}}
+  </tbody>
+</table>
